@@ -20,5 +20,17 @@
     font-style: italic;
 }
 
+fieldset {
+    font: 1em Georgia, "Times New Roman", Times, serif;
+    text-transform: none;
+    color: rgb(0, 0, 0);
+    background: rgb(57, 127, 157);
+    border: thin solid #333;
+}
+#legend {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #000;
+    }
 
   

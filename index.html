@@ -7,18 +7,20 @@
     <script src="JS.js"></script>
     <link href="cssstyling.css" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Quiz</title>
 </head>
 <body class= "page">
 
-<h1>Hello and welcome to my quiz</h1>
+<h1>Welcome to my Quiz! :)</h1>
 
     <p>
-        This quiz contains three questions: <br></br>
-        * First question with radio buttons.<br>
-        * Second with check boxes.<br> 
-        * Third with text box. 
+        This quiz contains three parts. <br>
+        * First part contains radio buttons.<br>
+        * Second part with checkboxes.<br> 
+        * Third should be answerd within the textbox. 
     </p>
+
+    <h3>"Good luck and may the odds be in your favour"</h3>
     
     <form id = "id" action = "#" name="myForm" onsubmit="return validateForm()">
     <b>First-Name</b> <br>
@@ -29,7 +31,7 @@
 
                 
     <fieldset id="question1">
-            <legend>What was the name of the president before Vladmir Putin?</legend>
+            <legend><b>Was the name of the president before Vladmir Putin?</b></legend>
             <input type="radio" id="q1" name="q1" value="1">
             <label>Boris Jelstin</label><br>
             <input type="radio" id="q1" name="q1" value="2">
@@ -40,7 +42,7 @@
         </fieldset><br><br>
 
     <fieldset id="question2">
-        <legend>What countries are member(s) of Nato?</legend>
+        <legend><b>Countries are member(s) of Nato?</b></legend>
         <input type="checkbox" id="a1" name="q2" value="1">
         <label>Albania</label><br>
         <input type="checkbox" id="a2" name="q2" value="2">
@@ -51,7 +53,7 @@
     </fieldset><br><br>
 
     <fieldset id="question3">
-        <legend>when can 1 x 1 = 2?</legend>
+        <legend><b>when can 1 x 1 = 2?</b></legend>
         <input type="textbox" id="q3" name="q3" class="inputfield">
         <p class = "answer"><b id='answer3'></b> </p>
     </fieldset>

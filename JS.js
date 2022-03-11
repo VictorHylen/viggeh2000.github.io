@@ -1,7 +1,7 @@
 
 function validateForm() {
     var score = 0;
-    
+    Sumbmitbutton = false;
     let fname = document.forms["myForm"]["fname"].value;
     let email = document.forms["myForm"]["email"].value;
 
@@ -70,7 +70,6 @@ function validateForm() {
     if (namereg.test(fname) == false || fname == "") {
       alert("Name must be filled out & and only contain letters");   
       Sumbmitbutton = false; 
-     
       return false;
     } 
   
@@ -91,13 +90,6 @@ function validateForm() {
     if(!Sumbmitbutton){
       button.disabled = false;
     }
-  
-    
-
-
-
- 
-
  }
 
 
