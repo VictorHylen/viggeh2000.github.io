@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS.js"></script>
+    <link href="cssstyling.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body class= "page">
+
+<h1>Hello and welcome to my quiz</h1>
+
+    <p>
+        This quiz contains three questions: <br></br>
+        * First question with radio buttons.<br>
+        * Second with check boxes.<br> 
+        * Third with text box. 
+    </p>
+    
+    <form id = "id" action = "#" name="myForm" onsubmit="return validateForm()">
+    <b>First-Name</b> <br>
+    <input type="text" name="fname" class="inputfield"><br><br>
+    
+    <b>Email:</b> <br>
+    <input type="text" name="email" class="inputfield"><br><br>
+
+                
+    <fieldset id="question1">
+            <legend>What was the name of the president before Vladmir Putin?</legend>
+            <input type="radio" id="q1" name="q1" value="1">
+            <label>Boris Jelstin</label><br>
+            <input type="radio" id="q1" name="q1" value="2">
+            <label>Dmitrij Medvedev</label><br>
+            <input type="radio" id="q1" name="q1" value="3">
+            <label>Josef Stalin</label><br>
+            <p class = "answer" ><b id='answer1'></b> </p>
+        </fieldset><br><br>
+
+    <fieldset id="question2">
+        <legend>What countries are member(s) of Nato?</legend>
+        <input type="checkbox" id="a1" name="q2" value="1">
+        <label>Albania</label><br>
+        <input type="checkbox" id="a2" name="q2" value="2">
+        <label>Hungary</label><br>
+        <input type="checkbox" id="a3" name="q2" value="3">
+        <label>Moldova</label>
+        <p class = "answer"><b id='answer2'><i></i></b> </p>
+    </fieldset><br><br>
+
+    <fieldset id="question3">
+        <legend>when can 1 x 1 = 2?</legend>
+        <input type="textbox" id="q3" name="q3" class="inputfield">
+        <p class = "answer"><b id='answer3'></b> </p>
+    </fieldset>
+    <p type='text' id='typeContent' value='answer'></p>
+    <p><b id='score'></b> </p>    
+    <input type='button' onclick='validateForm()' value='Get result'/>
+    <a onClick="window.location.reload()">Refresh quiz</a>
+    <input type="submit" value="Submit" id = "submit" disabled>
+    </form><br><br>
+
+
+    
+</body>
+</html>
